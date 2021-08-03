@@ -2,7 +2,16 @@ import Image from "next/image";
 import { Brightness4Outlined, Brightness7Outlined } from "@material-ui/icons";
 import logo from "@as/logo.svg";
 import { IconButton } from "@material-ui/core";
+import { useDispatch, useSelector } from "react-redux";
+import { changeMode, selectIsDarkMode } from "redux_/slices/modeSlice";
 function TopNavbar() {
+  const dispatch = useDispatch();
+  const isDark = useSelector(selectIsDarkMode);
+  const handleChangeMode = (e) => {
+    e.preventDefault();
+    dispatch(changeMode());
+    localStorage.setItem("is-dark-storage", !isDark);
+  };
   return (
     <header className="flex p-4 flex-row items-center justify-between relative border-b-2 border-blue-300 mb-6">
       <div className="flex flex-row items-center justify-start relative">
@@ -10,8 +19,8 @@ function TopNavbar() {
         <h1 className="ml-1 text-xl ">Ahmed Bargady</h1>
       </div>
       <div className="flex flex-row items-center justify-start relative ">
-        <IconButton>
-          {true ? <Brightness7Outlined /> : <Brightness4Outlined />}
+        <IconButton onClick={handleChangeMode}>
+          {isDark ? <Brightness7Outlined /> : <Brightness4Outlined />}
         </IconButton>
       </div>
     </header>

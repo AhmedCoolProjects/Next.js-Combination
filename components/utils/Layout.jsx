@@ -1,24 +1,32 @@
 import Footer from "./Footer";
 import TopNavbar from "./TopNavbar";
-import { useMemo } from "react";
+import { useMemo, useEffect } from "react";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 import { Container, CssBaseline } from "@material-ui/core";
 import { useRouter } from "next/router";
 import { colors } from "./ThemesColors";
+import { useDispatch, useSelector } from "react-redux";
+import { changeMode, selectIsDarkMode } from "redux_/slices/modeSlice";
 
 function Layout({ children }) {
-  const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
+  const isDark = useSelector(selectIsDarkMode);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    const isDarkStorage = localStorage.getItem("is-dark-storage");
+    if (isDarkStorage === "false") dispatch(changeMode());
+  }, []);
   const theme = useMemo(
     () =>
       createTheme({
         palette: {
-          type: prefersDarkMode ? "dark" : "light",
+          type: isDark ? "dark" : "light",
           primary: colors.primary,
           secondary: colors.secondary,
         },
       }),
-    [prefersDarkMode]
+    [isDark]
   );
   const router = useRouter();
   const { pathname } = router;
