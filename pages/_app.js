@@ -1,12 +1,16 @@
+import { Provider } from "react-redux";
+import { store } from "redux_/store";
+import Layout from "@comp/utils/Layout";
 import "../styles/globals.css";
 import "tailwindcss/tailwind.css";
-import Layout from "@comp/utils/Layout";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <Provider store={store}>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </Provider>
   );
 }
 
