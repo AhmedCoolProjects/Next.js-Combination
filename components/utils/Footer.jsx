@@ -1,5 +1,6 @@
-import { makeStyles } from "@material-ui/core/styles";
 import { Link, Typography } from "@material-ui/core";
+import { useSelector } from "react-redux";
+import { selectIsDarkMode } from "redux_/slices/modeSlice";
 
 function Copyright() {
   return (
@@ -14,20 +15,13 @@ function Copyright() {
   );
 }
 
-const useStyles = makeStyles((theme) => ({
-  footer: {
-    padding: theme.spacing(6),
-    marginTop: 24,
-    backgroundColor:
-      theme.palette.type === "light"
-        ? theme.palette.grey[200]
-        : theme.palette.grey[800],
-  },
-}));
 function Footer() {
-  const classes = useStyles();
+  const isDark = useSelector(selectIsDarkMode);
   return (
-    <footer className={classes.footer}>
+    <footer
+      className={
+        isDark ? "mt-12 p-12 bg-[#424242]" : "mt-12 p-12 bg-[#eeeeee]"
+      }>
       <Typography
         color="textSecondary"
         variant="h6"
