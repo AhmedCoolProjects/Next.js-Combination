@@ -7,7 +7,8 @@ First, specify the wanted technologies, then redirect to the compataible branch 
 ### Contents
 
 - [Next.js - tailwindcss - @material-ui/core - @material-ui/icons - default theming - jsconfig.json](#main)
-- [main + redux](#with-redux)
+- [main branche - redux](#with-redux)
+- [with-redux branche - next-auth:(Google,Facebook,Twitter,Github)](#with-next-auth)
 
 ## main
 [go to main](https://github.com/AhmedCoolProjects/Next.js-Combination/tree/main)
@@ -27,3 +28,5 @@ First, specify the wanted technologies, then redirect to the compataible branch 
 
 https://user-images.githubusercontent.com/72823374/128009078-f3b9e8e5-80bd-42ff-9793-dea1f5d623ae.mp4
 
+## with-next-auth
+[go to with-next-auth](https://github.com/AhmedCoolProjects/Next.js-Combination/tree/with-redux)
