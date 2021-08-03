@@ -11,7 +11,7 @@ function TopNavbar() {
       </div>
       <div className="flex flex-row items-center justify-start relative ">
         <IconButton>
-          {true ? <Brightness4Outlined /> : <Brightness4Outlined />}
+          {true ? <Brightness7Outlined /> : <Brightness4Outlined />}
         </IconButton>
       </div>
     </header>
