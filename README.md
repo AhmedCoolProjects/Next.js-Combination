@@ -9,6 +9,7 @@ First, specify the wanted technologies, then redirect to the compataible branch 
 - [Next.js - tailwindcss - @material-ui/core - @material-ui/icons - default theming - jsconfig.json](#main)
 - [main branche & redux](#with-redux)
 - [with-redux branche & next-auth:(Google,Facebook,Twitter,Github)](#with-next-auth)
+- [with-next-auth branche & theming using material-ui ](#with-theming)
 
 ## main
 [go to main](https://github.com/AhmedCoolProjects/Next.js-Combination/tree/main)
@@ -33,8 +34,15 @@ https://user-images.githubusercontent.com/72823374/128009078-f3b9e8e5-80bd-42ff-
 
 `login with 4 providers: GOOGLE, FACEBOOK, TWITTER, GITHUB`
 
-
-
 https://user-images.githubusercontent.com/72823374/128071946-efbf3299-6e83-4a91-adae-0e2f94589259.mp4
+
+## with-theming
+[go to with-theming](https://github.com/AhmedCoolProjects/Next.js-Combination/tree/with-theming)
+
+`using material-ui theming provider, and localstorage to save the last state of user preference`
+
+https://user-images.githubusercontent.com/72823374/128082079-1758a066-d57a-4fbb-af0c-9287af01a8af.mp4
+
+
 
 
