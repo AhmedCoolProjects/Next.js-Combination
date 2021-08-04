@@ -1,7 +1,10 @@
 {
-  "name": "frontend",
+  "name": "next.js-combination",
   "version": "0.1.0",
   "private": true,
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@AhmedCoolProjects"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
