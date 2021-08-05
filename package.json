@@ -1,9 +1,11 @@
 {
-  "name": "next.js-combination",
-  "version": "0.1.0",
+  "name": "@ahmedcoolprojects/next.js-combination",
+  "version": "0.1.1",
+  "author": "Ahmed BARGADY",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@AhmedCoolProjects"
   },
+  "repository": "git://github.com/AhmedCoolProjects/Next.js-Combination.git",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -24,5 +26,6 @@
     "eslint": "7.32.0",
     "eslint-config-next": "11.0.1",
     "postcss": "^8.3.6"
-  }
+  },
+  "license": "MIT"
 }
