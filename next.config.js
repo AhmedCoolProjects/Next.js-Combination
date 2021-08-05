@@ -1,6 +1,6 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: [""],
+    domains: [process.env.WP_ENDPOINT],
   },
 };
