@@ -11,6 +11,7 @@ First, specify the wanted technologies, then redirect to the compataible branch 
 - [with-redux branche & next-auth:(Google,Facebook,Twitter,Github)](#with-next-auth)
 - [with-next-auth branche & theming using material-ui ](#with-theming)
 - [with-theming branche & mongodb database - @material-ui/lab](#with-mongodb)
+- [with-styling branche & wordpress](#with-wordpress)
 
 ## main
 [go to main](https://github.com/AhmedCoolProjects/Next.js-Combination/tree/main)
@@ -50,6 +51,13 @@ https://user-images.githubusercontent.com/72823374/128082079-1758a066-d57a-4fbb-
 `using mongodb atlas for database, data, search, pagination also crud operations - using sample-mflix collection movies provided by mongodb`
 
 https://user-images.githubusercontent.com/72823374/128237441-7ffa5cfb-ca1f-4461-8dcc-63472da42c62.mp4
+
+## with-wordpress
+[go to with-wordpress](https://github.com/AhmedCoolProjects/Next.js-Combination/tree/with-wordpress)
+
+`using wp-graphql, woocommerce, wp-graphql for woocommerce, headless cms, you can get all those plugins in the /utils/wp folder`
+
+https://user-images.githubusercontent.com/72823374/128403718-fa192032-7c3a-42a5-b55a-8ac7f223bfd5.mp4
 
 
 
